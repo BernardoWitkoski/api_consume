@@ -1,4 +1,5 @@
 import 'package:api_consume/cepRequest.dart';
+import 'package:api_consume/weatherRequest.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -14,6 +15,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Utilities APP"),
+        backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
       body: Container(
         padding: EdgeInsets.all(16),
@@ -23,7 +25,10 @@ class _HomeState extends State<Home> {
           children: [
             ElevatedButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => cepRequest()));
-            }, child: Text("Consultar CEP"))
+            }, child: Text("Consultar CEP")),
+            ElevatedButton(onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder:  (context) => weatherRequest()));
+            }, child: Text("Consultar clima"))
           ],
         ),
       ),
