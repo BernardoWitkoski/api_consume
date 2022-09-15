@@ -50,6 +50,7 @@ class _cepRequestState extends State<cepRequest> {
     return Scaffold(
       appBar: AppBar(
         title: Text("CEP Request"),
+        backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
       body: Container(
         padding: EdgeInsets.all(40),

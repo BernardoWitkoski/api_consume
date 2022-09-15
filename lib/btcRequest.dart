@@ -13,6 +13,7 @@ class _btcRequestState extends State<btcRequest> {
     return Scaffold(
       appBar: AppBar(
         title: Text("BTC & Dollar Request"),
+        backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
     );
   }

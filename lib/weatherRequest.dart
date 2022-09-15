@@ -13,6 +13,7 @@ class _weatherRequestState extends State<weatherRequest> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Weather Request"),
+        backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
     );
   }
