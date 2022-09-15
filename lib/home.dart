@@ -1,3 +1,4 @@
+import 'package:api_consume/btcRequest.dart';
 import 'package:api_consume/cepRequest.dart';
 import 'package:api_consume/weatherRequest.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,10 @@ class _HomeState extends State<Home> {
             }, child: Text("Consultar CEP")),
             ElevatedButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder:  (context) => weatherRequest()));
-            }, child: Text("Consultar clima"))
+            }, child: Text("Consultar clima")),
+            ElevatedButton(onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder:  (context) => btcRequest()));
+            }, child: Text("Consultar BTC")),
           ],
         ),
       ),
