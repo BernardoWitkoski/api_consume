@@ -48,6 +48,9 @@ class _cepRequestState extends State<cepRequest> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("CEP Request"),
+      ),
       body: Container(
         padding: EdgeInsets.all(40),
         child: Column(
