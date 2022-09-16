@@ -18,9 +18,7 @@ class _HomeState extends State<Home> {
         title: Text("Utilities APP"),
         backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
-      body: Container(
-        padding: EdgeInsets.all(16),
-        child: Column(
+      body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -35,7 +33,6 @@ class _HomeState extends State<Home> {
             }, child: Text("Consultar BTC")),
           ],
         ),
-      ),
-    );
+      );
   }
 }

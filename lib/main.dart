@@ -10,13 +10,13 @@ void main() {
 }
 
 
-// HG Weather
+// api de tempo
   // city
   // description
   // temp
   // corrently (seria legal botar)
 
-// Blockchain
+// awesome API
   // bitcoin valor
   // dolar 
 
