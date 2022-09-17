@@ -18,7 +18,9 @@ class _HomeState extends State<Home> {
         title: Text("Utilities APP"),
         backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
-      body: Column(
+      body: Align(
+        alignment: Alignment.center,
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -32,6 +34,7 @@ class _HomeState extends State<Home> {
               Navigator.push(context, MaterialPageRoute(builder:  (context) => btcRequest()));
             }, child: Text("Consultar BTC")),
           ],
+          ),
         ),
       );
   }
