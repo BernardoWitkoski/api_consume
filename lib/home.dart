@@ -24,15 +24,37 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () {
+            ElevatedButton(
+              onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => cepRequest()));
-            }, child: Text("Consultar CEP")),
+            }, style: ElevatedButton.styleFrom(
+                        primary: Color.fromARGB(255, 46, 44, 44),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        elevation: 15.0,
+                      ), child: Text("Consultar CEP"),
+                    ),
             ElevatedButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder:  (context) => weatherRequest()));
-            }, child: Text("Consultar clima")),
+            }, style: ElevatedButton.styleFrom(
+                        primary: Color.fromARGB(255, 46, 44, 44),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        elevation: 15.0,
+                      ), child: Text("Consultar Clima"),
+                    ),
             ElevatedButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder:  (context) => btcRequest()));
-            }, child: Text("Consultar BTC")),
+            }, style: ElevatedButton.styleFrom(
+                        primary: Color.fromARGB(255, 46, 44, 44),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        elevation: 15.0,
+                      ), child: Text("Consultar BTC"),
+                    ),
           ],
           ),
         ),
