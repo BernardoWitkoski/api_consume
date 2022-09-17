@@ -15,8 +15,16 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Utilities APP"),
-        backgroundColor: Color.fromARGB(255, 46, 44, 44),
+        title: Text(
+          'Utilities API',
+          style: Theme.of(context).appBarTheme.titleTextStyle,
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.notifications),
+            onPressed: () {},
+          )
+        ],
       ),
       body: Align(
         alignment: Alignment.center,
@@ -58,6 +66,6 @@ class _HomeState extends State<Home> {
           ],
           ),
         ),
-      );
+        );
   }
 }
