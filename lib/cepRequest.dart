@@ -36,13 +36,10 @@ class _cepRequestState extends State<cepRequest> {
       setState(() {
         _resultado = "${localidade} ${logradouro} ${bairro} ${complemento}";
       });
-
-
     } else {
       print("Error ${response.statusCode.toString()}");
     }
 
-    // print(response.body);
   }
 
   @override
