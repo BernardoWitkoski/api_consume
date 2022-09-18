@@ -37,6 +37,7 @@ class _HomeState extends State<Home> {
               onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => cepRequest()));
             }, style: ElevatedButton.styleFrom(
+                        minimumSize: Size(380, 50),
                         primary: Color.fromARGB(255, 46, 44, 44),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25),
@@ -47,6 +48,7 @@ class _HomeState extends State<Home> {
             ElevatedButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder:  (context) => weatherRequest()));
             }, style: ElevatedButton.styleFrom(
+                        minimumSize: Size(380, 50),
                         primary: Color.fromARGB(255, 46, 44, 44),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25),
@@ -57,6 +59,7 @@ class _HomeState extends State<Home> {
             ElevatedButton(onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder:  (context) => btcRequest()));
             }, style: ElevatedButton.styleFrom(
+                        minimumSize: Size(380, 50),
                         primary: Color.fromARGB(255, 46, 44, 44),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25),
