@@ -27,14 +27,14 @@ class _btcRequestState extends State<btcRequest> {
       //show content
       Map<String, dynamic> request_return = convert.jsonDecode(response.body);
 
-    String code = request_return["code"];
+      String code = request_return["code"];
       String codein = request_return["codein"];
       String name = request_return["name"];
       String bid = request_return["bid"];
-      String create_date = request_return["create_date"];
+      String createDate = request_return["create_date"];
 
       setState(() {
-        _resultado = "${code} ${codein} ${name} ${bid} ${create_date}";
+        _resultado = "${code} ${codein} ${name} ${bid} ${createDate}";
       });
     } else {
       print("Error ${response.statusCode.toString()}");
