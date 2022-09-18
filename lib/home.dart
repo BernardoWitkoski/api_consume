@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
           'Utilities API',
           style: Theme.of(context).appBarTheme.titleTextStyle,
         ),
+        backgroundColor: Color.fromARGB(255, 46, 44, 44),
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),

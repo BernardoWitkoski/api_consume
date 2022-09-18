@@ -11,9 +11,9 @@ class btcRequest extends StatefulWidget {
 
 class _btcRequestState extends State<btcRequest> {
 
-  _recuperaCep() async {
+  String _resultado = "standard string";
 
-    String _resultado = "...";
+  _recuperaCep() async {
 
     // URL base = https://economia.awesomeapi.com.br/json/last/BTC-BRL
 
@@ -50,6 +50,10 @@ class _btcRequestState extends State<btcRequest> {
         title: Text("BTC & Dollar Request"),
         backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
+      body: Padding(
+            padding: EdgeInsets.all(16),
+            child: Text(_resultado),
+          ),
     );
   }
 }
