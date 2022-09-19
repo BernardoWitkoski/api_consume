@@ -39,7 +39,6 @@ class _btcRequestState extends State<btcRequest> {
     } else {
       print("Error ${response.statusCode.toString()}");
     }
-
   }
 
 

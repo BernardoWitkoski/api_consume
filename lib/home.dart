@@ -27,11 +27,10 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: Align(
-        alignment: Alignment.center,
+      body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             ElevatedButton(
               onPressed: () {
