@@ -62,7 +62,16 @@ class _cepRequestState extends State<cepRequest> {
               controller: _controllerCep,
             ),
             ElevatedButton(
-              onPressed: _recuperaCep, child: Text("Buscar Cidade")
+              onPressed: _recuperaCep, 
+              style: ElevatedButton.styleFrom(
+                        minimumSize: Size(380, 50),
+                        primary: Color.fromARGB(255, 46, 44, 44),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        elevation: 15.0,
+                      ),
+              child: Text("Buscar Cidade")
               ),
               Text(_resultado),
           ]),
