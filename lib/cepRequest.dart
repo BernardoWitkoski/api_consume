@@ -53,7 +53,7 @@ class _cepRequestState extends State<cepRequest> {
         padding: EdgeInsets.all(40),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             TextField(
               keyboardType: TextInputType.number,
