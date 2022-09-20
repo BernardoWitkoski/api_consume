@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Color.fromARGB(255, 46, 44, 44),
         actions: [
           IconButton(
-            icon: const Icon(Icons.notifications),
+            icon: const Icon(Icons.account_circle_sharp),
             onPressed: () {},
           )
         ],
