@@ -16,8 +16,11 @@ class _weatherRequestState extends State<weatherRequest> {
   Future _requestWeather() async {
 
     // https://api.hgbrasil.com/weather?woeid=457152
+    // aa81417d
+    // https://api.hgbrasil.com/weather?key=aa81417d&city_name=Erechim,RS
 
-    var uri = Uri.http("api.hgbrasil.com", "/weather?woeid=457152");
+    // var uri = Uri.http("api.hgbrasil.com", "/weather?key=aa81417d&city_name=Erechim,RS");
+    var uri = Uri.parse('api.hgbrasil.com/weather?key=aa81417d&city_name=Erechim,RS');
 
     http.Response response;
 
