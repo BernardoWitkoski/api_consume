@@ -16,9 +16,9 @@ class _btcRequestState extends State<btcRequest> {
   Future _recuperaCep() async {
 
     // URL base = https://economia.awesomeapi.com.br/json/last/BTC-BRL
-    // URL base  = 
+    // URL base  = https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false
 
-    var uri = Uri.http("economia.awesomeapi.com.br", "/json/last/BTC-BRL");
+    var uri = Uri.http("api.coingecko.com", "/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false");
 
     http.Response response;
 
@@ -46,10 +46,13 @@ class _btcRequestState extends State<btcRequest> {
         title: Text("BTC & Dollar Request"),
         backgroundColor: Color.fromARGB(255, 46, 44, 44),
       ),
-      body: Padding(
-            padding: EdgeInsets.all(16),
-            child: Text(_resultado),
-          ),
+      body: Container(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          children: [
+          Text(_resultado),
+          ]),
+        ),
     );
   }
 }
