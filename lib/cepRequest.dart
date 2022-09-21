@@ -12,7 +12,7 @@ class cepRequest extends StatefulWidget {
 class _cepRequestState extends State<cepRequest> {
 
   TextEditingController _controllerCep = TextEditingController();
-  String _resultado = "standard string";
+  String _resultado = " ";
 
   Future _recuperaCep() async {
     String cep = _controllerCep.text;
