@@ -9,14 +9,3 @@ void main() {
   ));
 }
 
-
-// api de tempo
-  // city
-  // description
-  // temp
-  // corrently (seria legal botar)
-
-// awesome API
-  // bitcoin valor
-  // dolar 
-
