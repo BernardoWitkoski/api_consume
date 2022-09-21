@@ -18,20 +18,22 @@ class _btcRequestState extends State<btcRequest> {
     // URL base = https://economia.awesomeapi.com.br/json/last/BTC-BRL
     // URL base  = https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false
 
-    var uri = Uri.http("api.coingecko.com", "/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false");
+    //var uri = Uri.http("economia.awesomeapi.com.br", "awesomeapi.com.br/json/last/BTC-BRL");
+
+    var uri = Uri.parse('economia.awesomeapi.com.br/json/last/BTC-BRL');
 
     http.Response response;
 
     response = await http.get(uri);
 
     if(response.statusCode == 200) {
-      //show content
+
       Map<String, dynamic> request_return = convert.jsonDecode(response.body);
 
-      String bid = request_return["bid"];
+      String name = request_return["name"];
 
       setState(() {
-        _resultado = "${bid}";
+        _resultado = "${name}";
       });
     } else {
       print("Error ${response.statusCode.toString()}");
