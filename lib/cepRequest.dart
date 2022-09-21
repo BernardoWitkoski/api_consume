@@ -14,7 +14,7 @@ class _cepRequestState extends State<cepRequest> {
   TextEditingController _controllerCep = TextEditingController();
   String _resultado = "standard string";
 
-  _recuperaCep() async {
+  Future _recuperaCep() async {
     String cep = _controllerCep.text;
     // URL base = "https://viacep.com.br/ws/${cep}/json/";
 
