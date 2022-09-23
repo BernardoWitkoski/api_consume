@@ -27,48 +27,62 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => cepRequest()));
-            }, style: ElevatedButton.styleFrom(
-                        minimumSize: Size(380, 50),
-                        primary: Color.fromARGB(255, 46, 44, 44),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25),
-                        ),
-                        elevation: 15.0,
-                      ), child: Text("Consultar CEP"),
+      body: Container(
+        padding: EdgeInsets.all(16),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(5),
+                    child: 
+                    ElevatedButton(onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => cepRequest()));
+                        }, style: ElevatedButton.styleFrom(
+                            minimumSize: Size(380, 50),
+                            primary: Color.fromARGB(255, 46, 44, 44),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            elevation: 15.0,
+                          ), child: Text("Consultar CEP"),
+                      ),
                     ),
-            ElevatedButton(onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder:  (context) => weatherRequest()));
-            }, style: ElevatedButton.styleFrom(
-                        minimumSize: Size(380, 50),
-                        primary: Color.fromARGB(255, 46, 44, 44),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25),
-                        ),
-                        elevation: 15.0,
-                      ), child: Text("Consultar Clima"),
-                    ),
-            ElevatedButton(onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder:  (context) => btcRequest()));
-            }, style: ElevatedButton.styleFrom(
-                        minimumSize: Size(380, 50),
-                        primary: Color.fromARGB(255, 46, 44, 44),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25),
-                        ),
-                        elevation: 15.0,
-                      ), child: Text("Consultar BTC"),
-                    ),
-          ],
+                Padding(
+                  padding: EdgeInsets.all(5),
+                    child:
+                    ElevatedButton(onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder:  (context) => weatherRequest()));
+                        }, style: ElevatedButton.styleFrom(
+                            minimumSize: Size(380, 50),
+                            primary: Color.fromARGB(255, 46, 44, 44),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            elevation: 15.0,
+                          ), child: Text("Consultar Clima"),
+                      ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(5),
+                    child:
+                    ElevatedButton(onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder:  (context) => btcRequest()));
+                        }, style: ElevatedButton.styleFrom(
+                            minimumSize: Size(380, 50),
+                            primary: Color.fromARGB(255, 46, 44, 44),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            elevation: 15.0,
+                          ), child: Text("Consultar BTC"),
+                      ),
+                ),
+              ],
+            ),
+          ),
           ),
         ),
-        );
+      );
   }
 }
